@@ -7056,7 +7056,13 @@ td.visible-print {
 
 .nav-justified-products {
   width: 100%;
-  font-size: 70%;
+  font-size: 50%;
+}
+
+@media (min-width: 768px) {
+  .nav-justified-products {
+    font-size: 100%;
+  }
 }
 
 .nav-justified-products > li {
