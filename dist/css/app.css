@@ -7232,8 +7232,13 @@ td.visible-print {
 }
 
 .list-power-desc > dt {
-  margin-top: 10px;
+  float: left;
   color: #ff6600;
+}
+
+.list-power-desc > dd {
+  margin-bottom: 10px;
+  margin-left: 120px;
 }
 
 .footer {
@@ -7245,4 +7250,58 @@ td.visible-print {
 
 .footer strong {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .font-adapt {
+    font-size: 75%;
+  }
+}
+
+.pt-header {
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.pt-panel {
+  margin-bottom: 20px;
+}
+
+.pt-panel > table {
+  width: 100%;
+}
+
+.pt-panel > table th:first-child,
+.pt-panel > table td:first-child {
+  width: 60%;
+}
+
+.pt-panel > table th:last-child,
+.pt-panel > table td:last-child {
+  width: 40%;
+}
+
+ul.pt-list {
+  padding: 0;
+}
+
+ul.pt-list > li {
+  list-style: none;
+}
+
+ul.pt-list > li:before {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 14px;
+  background-color: #ff6600;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  content: '';
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
 }
